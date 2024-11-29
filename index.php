@@ -78,11 +78,28 @@
         .login-container p a:hover {
             text-decoration: underline;
         }
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .error-message {
+            color: #dc2626;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
         <h2>Login ke Online Shop</h2>
+        <?php if (isset($_GET['error'])): ?>
+            <div class="error-message">
+                Username atau password salah. Silakan coba lagi.
+            </div>
+        <?php endif; ?>
         <form action="process_login.php" method="POST">
             <div>
                 <label for="username">Username</label>
@@ -91,6 +108,10 @@
             <div style="margin-top: 1rem;">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" required>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" name="remember_me" id="remember_me">
+                <label for="remember_me">Ingat Saya</label>
             </div>
             <button type="submit">Login</button>
         </form>
