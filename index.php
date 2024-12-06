@@ -106,7 +106,7 @@
                 <input type="text" name="username" id="username" required>
             </div>
             <div style="margin-top: 1rem;">
-                <label for="password">Sandi</label>
+                <label for="password">Sandia aga uno</label>
                 <input type="password" name="password" id="password" required>
             </div>
             <div class="remember-me">
