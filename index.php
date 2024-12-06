@@ -111,7 +111,7 @@
             </div>
             <div class="remember-me">
                 <input type="checkbox" name="remember_me" id="remember_me">
-                <label for="remember_me">Ingat Saya</label>
+                <label for="remember_me">Ingat Saja</label>
             </div>
             <button type="submit">Login</button>
         </form>
