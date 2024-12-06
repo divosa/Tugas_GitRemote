@@ -106,6 +106,10 @@
                 <input type="text" name="username" id="username" required>
             </div>
             <div style="margin-top: 1rem;">
+                <label for="password">nama</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div style="margin-top: 1rem;">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" required>
             </div>
